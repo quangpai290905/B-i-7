@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container chính */
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh; /* Chiều cao 100% của viewport */
+    }
+
+    /* Phần trên cùng (header bao gồm logo, navigation, banner) */
+    .header {
+      background-color: lightgray;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 5px solid orange;
+    }
+
+    .header .logo {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .header .navigation {
+      padding: 10px;
+      border-bottom: 5px solid orange;
+      text-align: center;
+    }
+
+    .header .banner {
+      padding: 10px;
+      border-bottom: 5px solid orange;
+      text-align: center;
+    }
+
+    /* Phần nội dung chính */
+    .main-content {
+      display: flex;
+      flex: 1; /* Để chiếm không gian còn lại */
+    }
+
+    .sidebar {
+      width: 20%;
+      background-color: lightgray;
+      padding: 10px;
+      border-right: 5px solid orange;
+    }
+
+    .body-area {
+      width: 80%;
+      background-color: lightgray;
+      padding: 10px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: lightgray;
+      padding: 10px;
+      text-align: center;
+      border-top: 5px solid orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Phần trên cùng -->
+    <div class="header">
+      <div class="logo">
+        Logo
+      </div>
+      <div class="navigation">
+        Navigation
+      </div>
+      <div class="banner">
+        Header/Banner
+      </div>
+    </div>
+
+    <!-- Phần nội dung chính -->
+    <div class="main-content">
+      <div class="sidebar">
+        Side Bar
+      </div>
+      <div class="body-area">
+        Body Area
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      Footer
+    </div>
+  </div>
+</body>
+</html>
